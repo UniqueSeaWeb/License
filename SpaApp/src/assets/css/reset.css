@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2E2E2E;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+li, ol {
+    list-style: none;
+}

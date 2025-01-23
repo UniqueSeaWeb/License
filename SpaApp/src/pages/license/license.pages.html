@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ライセンス情報</title>
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="./license.pages.modules.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">ライセンス情報</h1>
+    </header>
+
+    <div id="container">
+        <main id="main" class="main">
+            <ul class="licenseList">
+                <li>
+                    <h2 class="licenseTitle">MIT</h2>
+                    <iframe src="https://opensource.org/licenses/MIT" frameborder="0" class="iframe"></iframe>
+                    <div class="iframeLinkWrapper">
+                        <div class="iframeLink"><a href="https://opensource.org/licenses/MIT">
+                            <p>ライセンス元ページへ &#x279C;</p>
+                        </a></div>
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </div>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const iframe = document.getElementsByClassName('iframe');
+            
+            for (let i = 0; i < iframe.length; i++) {
+                iframe[i].style.height = iframe[i].contentWindow.document.body.scrollHeight + 'px';
+            }
+        });
+    </script>
+</body>
+
+</html>
