@@ -19,12 +19,21 @@
         <main id="main" class="main">
             <ul class="licenseList">
                 <li>
-                    <h2 class="licenseTitle">MIT</h2>
+                    <h2 class="licenseTitle">React.js</h2>
                     <iframe src="https://opensource.org/licenses/MIT" frameborder="0" class="iframe"></iframe>
                     <div class="iframeLinkWrapper">
                         <div class="iframeLink"><a href="https://opensource.org/licenses/MIT">
-                            <p>ライセンス元ページへ &#x279C;</p>
-                        </a></div>
+                                <p>ライセンス元ページへ &#x279C;</p>
+                            </a></div>
+                    </div>
+                </li>
+                <li>
+                    <h2 class="licenseTitle">Flutter</h2>
+                    <iframe src="https://flutter.dev/docs/resources/licenses" frameborder="0" class="iframe"></iframe>
+                    <div class="iframeLinkWrapper">
+                        <div class="iframeLink"><a href="https://flutter.dev/docs/resources/licenses">
+                                <p>ライセンス元ページへ &#x279C;</p>
+                            </a></div>
                     </div>
                 </li>
             </ul>
@@ -34,9 +43,11 @@
     <script>
         window.addEventListener('DOMContentLoaded', () => {
             const iframe = document.getElementsByClassName('iframe');
-            
+
             for (let i = 0; i < iframe.length; i++) {
-                iframe[i].style.height = iframe[i].contentWindow.document.body.scrollHeight + 'px';
+                iframe[i].addEventListener('load', () => {
+                    iframe[i].style.height = iframe[i].contentWindow.document.body.scrollHeight + 'px';
+                });
             }
         });
     </script>
