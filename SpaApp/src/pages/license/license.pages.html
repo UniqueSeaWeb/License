@@ -46,7 +46,9 @@
 
             for (let i = 0; i < iframe.length; i++) {
                 iframe[i].addEventListener('load', () => {
-                    iframe[i].style.height = iframe[i].contentWindow.document.body.scrollHeight + 'px';
+                    let iframeHeight = iframe[i].contentWindow.document.body.scrollHeight;
+                    console.log('iframeHeight', iframeHeight);
+                    iframe[i].style.height = `${iframeHeight}px`;
                 });
             }
         });

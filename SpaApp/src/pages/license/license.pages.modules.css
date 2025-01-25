@@ -1,12 +1,12 @@
 .header {
-    padding: 8px 0;
+    padding: 12px 0;
     background-color: #006D4E;
 }
 
 .title {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 32px;
     color: #FFFFFF;
     text-align: center;
 }
@@ -16,7 +16,7 @@
 }
 
 .licenseList>li:not(:first-child) {
-    padding-top: 16px;
+    padding-top: 24px;
 }
 
 .licenseTitle {
@@ -28,7 +28,7 @@
 
 .iframe {
     width: 100%;
-    max-height: 400px;
+    max-height: 360px;
     margin-top: 8px;
     border-radius: 8px;
 }
@@ -38,19 +38,18 @@
 }
 
 .iframeLinkWrapper {
-    padding-top: 8px;
+    padding-top: 16px;
 }
 
 .iframeLink {
     display: flex;
     justify-content: flex-end;
-    padding-right: 24px;
 }
 
 .iframeLink p {
     font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 24px;
     color: #08916a;
     text-align: right;
     cursor: pointer;
